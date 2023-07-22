@@ -9,7 +9,7 @@
         .nav-buttons {
             display: none;
         }
-        #open-btn{
+        #open-btn {
             display: block;
         }
     }
@@ -28,25 +28,20 @@
             text-align: center;
 
             h1 {
-                font-size: 3rem;
+                font-size: 2rem;
                 margin: 20px 0;
             }
             p {
                 width: 100%;
-                font-size: 1.5rem;
+                font-size: 1.15rem;
                 padding: 1rem;
                 line-height: 1.8;
                 margin: 20px 0;
             }
-
-            button {
-                margin: 20px 0;
-                width: 60%;
-            }
         }
 
-        .Company-logos{
-            img{
+        .Company-logos {
+            img {
                 width: 15%;
             }
         }
@@ -57,7 +52,14 @@
     }
 }
 
-footer{
+#Learn-more-btn {
+    padding: 15px;
+    margin: 20px 0;
+    width: 70%;
+    font-size: 18px;
+}
+
+footer {
     margin-top: 3rem;
     font-size: 12px;
 }
