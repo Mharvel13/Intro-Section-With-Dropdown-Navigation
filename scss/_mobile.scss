@@ -1,0 +1,63 @@
+@media (max-width: 750px) {
+    body {
+        margin: 0;
+    }
+    header {
+        margin: 1rem;
+
+        ul,
+        .nav-buttons {
+            display: none;
+        }
+        #open-btn{
+            display: block;
+        }
+    }
+
+    main {
+        position: relative;
+        width: 100%;
+        margin: 0;
+    }
+    .showcase {
+        flex-direction: column-reverse;
+        margin: 0;
+
+        .showcase-text {
+            width: 100%;
+            text-align: center;
+
+            h1 {
+                font-size: 3rem;
+                margin: 20px 0;
+            }
+            p {
+                width: 100%;
+                font-size: 1.5rem;
+                padding: 1rem;
+                line-height: 1.8;
+                margin: 20px 0;
+            }
+
+            button {
+                margin: 20px 0;
+                width: 60%;
+            }
+        }
+
+        .Company-logos{
+            img{
+                width: 15%;
+            }
+        }
+
+        .showcase-image {
+            width: 100%;
+        }
+    }
+}
+
+footer{
+    margin-top: 3rem;
+    font-size: 12px;
+}

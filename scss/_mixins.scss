@@ -1,0 +1,18 @@
+@mixin btns {
+    padding: 0.8rem 1.5rem;
+    margin: 10px;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    border: 2px solid gray;
+    background-color: transparent;
+    cursor: pointer;
+    color: gray;
+}
+
+@mixin hover {
+    background-color: $White;
+    padding: 10px 15px;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow:  3px 3px 20px hsl(0, 0%, 61%);
+}

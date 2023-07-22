@@ -1,0 +1,233 @@
+@import "base-config";
+@import "mixins";
+
+header {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .desktop-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            list-style-type: none;
+            display: inline-block;
+            margin: 20px;
+
+            a {
+                color: gray;
+                text-decoration: none;
+                font-size: 20px;
+            }
+            a:focus,
+            a:hover {
+                color: $Almost-black;
+            }
+            img {
+                width: 15px;
+            }
+        }
+    }
+    button {
+        @include btns;
+    }
+
+    button:focus,
+    button:hover {
+        color: black;
+        border-color: black;
+    }
+    .login-button {
+        border: none;
+    }
+
+    #open-btn {
+        font-size: 1rem;
+        display: none;
+        border: none;
+    }
+}
+
+.sidebar {
+    width: 50%;
+    padding: 1rem;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    box-shadow: 3px 3px 100px rgba(0, 0, 0, 1);
+    background-color: white;
+    z-index: 1;
+    // animation: slow 3s  normal forwards ease-in;
+
+    .mobile-nav {
+        font-size: 1rem;
+        margin-top: 80px;
+    }
+    ul {
+        text-align: left;
+        padding: 0;
+    }
+    li {
+        list-style-type: none;
+        display: block;
+        margin: 20px;
+
+        a {
+            color: $Meduim-gray;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        a:hover {
+            color: $Almost-black;
+        }
+        img {
+            width: 15px;
+        }
+    }
+
+    #close-btn {
+        font-size: 2rem;
+        position: fixed;
+        right: 20px;
+        border: none;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .mobile-nav-buttons {
+        display: flex;
+        flex-direction: column;
+        button {
+            @include btns;
+        }
+        button:hover {
+            color: black;
+            border-color: black;
+        }
+        .login-button {
+            border: none;
+        }
+    }
+}
+
+.hover-list-features {
+    @include hover;
+    width: 140px;
+    left: 130px;
+    top: 80px;
+
+    img {
+        margin-right: 10px;
+    }
+}
+
+.hover-list-company {
+    @include hover;
+    width: 110px;
+    left: 310px;
+    top: 80px;
+}
+.none {
+    display: none;
+}
+
+main {
+    position: relative;
+    width: 85%;
+    margin: 20px auto;
+    z-index: -1;
+}
+
+.showcase {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5.3rem;
+
+    .showcase-text {
+        width: 65%;
+        margin: 10px 2rem;
+
+        h1 {
+            font: {
+                family: Helvetica, sans-serif;
+                size: 5rem;
+            }
+            margin: 2rem 0;
+        }
+
+        p {
+            width: 85%;
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 2.3rem;
+            color: $Meduim-gray;
+            margin: 2rem 0;
+        }
+
+        .Company-logos {
+            margin-top: 5rem;
+
+            img {
+                margin: 0px 15px;
+            }
+        }
+    }
+
+    .showcase-image {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+#Learn-more-btn {
+    // cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    width: 35%;
+    padding: 20px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 2rem 0;
+    border-radius: 15px;
+}
+#Learn-more-btn:focus,
+#Learn-more-btn:hover{
+    background-color: $White;
+    color: $Almost-black;
+    border: 1px solid $Meduim-gray;
+}
+
+
+footer {
+    font-size: 15px;
+
+    .attribution {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    p {
+        color: $Almost-black;
+        margin: 5px;
+    }
+    a {
+        color: $Attribution;
+    }
+}
+
+@import "mobile";

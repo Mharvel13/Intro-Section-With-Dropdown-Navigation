@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+header {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .desktop-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .desktop-nav li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 20px;
+}
+header .desktop-nav li a {
+  color: gray;
+  text-decoration: none;
+  font-size: 20px;
+}
+header .desktop-nav li a:focus,
+header .desktop-nav li a:hover {
+  color: hsl(0, 0%, 8%);
+}
+header .desktop-nav li img {
+  width: 15px;
+}
+header button {
+  padding: 0.8rem 1.5rem;
+  margin: 10px;
+  font-size: 1.1rem;
+  border-radius: 15px;
+  border: 2px solid gray;
+  background-color: transparent;
+  cursor: pointer;
+  color: gray;
+}
+header button:focus,
+header button:hover {
+  color: black;
+  border-color: black;
+}
+header .login-button {
+  border: none;
+}
+header #open-btn {
+  font-size: 1rem;
+  display: none;
+  border: none;
+}
+
+.sidebar {
+  width: 50%;
+  padding: 1rem;
+  height: 100%;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  box-shadow: 3px 3px 100px rgb(0, 0, 0);
+  background-color: white;
+  z-index: 1;
+}
+.sidebar .mobile-nav {
+  font-size: 1rem;
+  margin-top: 80px;
+}
+.sidebar ul {
+  text-align: left;
+  padding: 0;
+}
+.sidebar li {
+  list-style-type: none;
+  display: block;
+  margin: 20px;
+}
+.sidebar li a {
+  color: hsl(0, 0%, 41%);
+  text-decoration: none;
+  font-size: 20px;
+}
+.sidebar li a:hover {
+  color: hsl(0, 0%, 8%);
+}
+.sidebar li img {
+  width: 15px;
+}
+.sidebar #close-btn {
+  font-size: 2rem;
+  position: fixed;
+  right: 20px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.sidebar .mobile-nav-buttons {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .mobile-nav-buttons button {
+  padding: 0.8rem 1.5rem;
+  margin: 10px;
+  font-size: 1.1rem;
+  border-radius: 15px;
+  border: 2px solid gray;
+  background-color: transparent;
+  cursor: pointer;
+  color: gray;
+}
+.sidebar .mobile-nav-buttons button:hover {
+  color: black;
+  border-color: black;
+}
+.sidebar .mobile-nav-buttons .login-button {
+  border: none;
+}
+
+.hover-list-features {
+  background-color: hsl(0, 0%, 100%);
+  padding: 10px 15px;
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px hsl(0, 0%, 61%);
+  width: 140px;
+  left: 130px;
+  top: 80px;
+}
+.hover-list-features img {
+  margin-right: 10px;
+}
+
+.hover-list-company {
+  background-color: hsl(0, 0%, 100%);
+  padding: 10px 15px;
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px hsl(0, 0%, 61%);
+  width: 110px;
+  left: 310px;
+  top: 80px;
+}
+
+.none {
+  display: none;
+}
+
+main {
+  position: relative;
+  width: 85%;
+  margin: 20px auto;
+  z-index: -1;
+}
+
+.showcase {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5.3rem;
+}
+.showcase .showcase-text {
+  width: 65%;
+  margin: 10px 2rem;
+}
+.showcase .showcase-text h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 5rem;
+  margin: 2rem 0;
+}
+.showcase .showcase-text p {
+  width: 85%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.3rem;
+  color: hsl(0, 0%, 41%);
+  margin: 2rem 0;
+}
+.showcase .showcase-text .Company-logos {
+  margin-top: 5rem;
+}
+.showcase .showcase-text .Company-logos img {
+  margin: 0px 15px;
+}
+.showcase .showcase-image {
+  width: 50%;
+}
+.showcase .showcase-image img {
+  width: 100%;
+}
+
+#Learn-more-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 35%;
+  padding: 20px 25px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 2rem 0;
+  border-radius: 15px;
+}
+
+#Learn-more-btn:focus,
+#Learn-more-btn:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 8%);
+  border: 1px solid hsl(0, 0%, 41%);
+}
+
+footer {
+  font-size: 15px;
+}
+footer .attribution {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer p {
+  color: hsl(0, 0%, 8%);
+  margin: 5px;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 750px) {
+  body {
+    margin: 0;
+  }
+  header {
+    margin: 1rem;
+  }
+  header ul,
+  header .nav-buttons {
+    display: none;
+  }
+  header #open-btn {
+    display: block;
+  }
+  main {
+    position: relative;
+    width: 100%;
+    margin: 0;
+  }
+  .showcase {
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+  .showcase .showcase-text {
+    width: 100%;
+    text-align: center;
+  }
+  .showcase .showcase-text h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+  }
+  .showcase .showcase-text p {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    line-height: 1.8;
+    margin: 20px 0;
+  }
+  .showcase .showcase-text button {
+    margin: 20px 0;
+    width: 60%;
+  }
+  .showcase .Company-logos img {
+    width: 15%;
+  }
+  .showcase .showcase-image {
+    width: 100%;
+  }
+}
+footer {
+  margin-top: 3rem;
+  font-size: 12px;
+}
