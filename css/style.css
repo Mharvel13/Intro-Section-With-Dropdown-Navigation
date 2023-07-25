@@ -64,27 +64,53 @@ header button:hover {
 header .login-button {
   border: none;
 }
-header #open-btn {
+
+#open-btn {
   font-size: 1rem;
   display: none;
   border: none;
 }
 
+.hover-list-features {
+  background-color: hsl(0, 0%, 100%);
+  padding: 10px 15px;
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px hsl(0, 0%, 61%);
+  width: 140px;
+  left: 130px;
+  top: 80px;
+}
+.hover-list-features img {
+  margin-right: 10px;
+}
+
+.hover-list-company {
+  background-color: hsl(0, 0%, 100%);
+  padding: 10px 15px;
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px hsl(0, 0%, 61%);
+  width: 110px;
+  left: 310px;
+  top: 80px;
+}
+
 .sidebar {
   width: 60%;
+  height: 100vh;
   padding: 1rem;
-  height: 100%;
-  margin: 0;
   position: fixed;
   top: 0;
   right: 0;
   box-shadow: 3px 3px 100px rgb(0, 0, 0);
   background-color: white;
   z-index: 1;
+  overflow: scroll;
 }
 .sidebar .mobile-nav {
   font-size: 1rem;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 .sidebar ul {
   text-align: left;
@@ -93,12 +119,12 @@ header #open-btn {
 .sidebar li {
   list-style-type: none;
   display: block;
-  margin: 30px 10px;
+  margin: 40px 10px;
 }
 .sidebar li a {
   color: hsl(0, 0%, 41%);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
 }
 .sidebar li a:hover {
   color: hsl(0, 0%, 8%);
@@ -136,29 +162,11 @@ header #open-btn {
   border: none;
 }
 
-.hover-list-features {
-  background-color: hsl(0, 0%, 100%);
-  padding: 10px 15px;
-  position: absolute;
-  border-radius: 10px;
-  box-shadow: 3px 3px 20px hsl(0, 0%, 61%);
-  width: 140px;
-  left: 130px;
-  top: 80px;
+.dropdown-list-features, .dropdown-list-company {
+  margin: 30px 0 0 20px;
 }
-.hover-list-features img {
+.dropdown-list-features img, .dropdown-list-company img {
   margin-right: 10px;
-}
-
-.hover-list-company {
-  background-color: hsl(0, 0%, 100%);
-  padding: 10px 15px;
-  position: absolute;
-  border-radius: 10px;
-  box-shadow: 3px 3px 20px hsl(0, 0%, 61%);
-  width: 110px;
-  left: 310px;
-  top: 80px;
 }
 
 .none {
@@ -210,10 +218,11 @@ main {
 }
 
 #Learn-more-btn {
+  cursor: pointer;
   background-color: black;
   color: white;
   border: none;
-  width: 35%;
+  width: 40%;
   padding: 20px 25px;
   font-size: 20px;
   font-weight: bold;
@@ -273,7 +282,7 @@ footer a {
     text-align: center;
   }
   .showcase .showcase-text h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 20px 0;
   }
   .showcase .showcase-text p {
@@ -289,14 +298,47 @@ footer a {
   .showcase .showcase-image {
     width: 100%;
   }
+  #Learn-more-btn {
+    padding: 15px;
+    margin: 20px 0;
+    width: 70%;
+    font-size: 18px;
+  }
 }
-#Learn-more-btn {
-  padding: 15px;
-  margin: 20px 0;
-  width: 70%;
-  font-size: 18px;
+@media screen and (max-width: 1100px) and (min-width: 750px) {
+  header {
+    margin: 1rem;
+  }
+  header ul,
+  header .nav-buttons {
+    display: none;
+  }
+  header #open-btn {
+    display: block;
+  }
+  .showcase {
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+  .showcase .showcase-text {
+    width: 100%;
+    text-align: center;
+  }
+  .showcase .showcase-text h1 {
+    font-size: 4rem;
+    margin: 20px 0;
+  }
+  .showcase .showcase-text p {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    line-height: 1.8;
+    margin: 20px 0;
+  }
+  .showcase .showcase-image {
+    width: 70%;
+  }
 }
-
 footer {
   margin-top: 3rem;
   font-size: 12px;

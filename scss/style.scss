@@ -9,6 +9,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
+    // desktop navigation styles
     .desktop-nav {
         display: flex;
         justify-content: center;
@@ -20,7 +21,7 @@ header {
             margin: 20px;
 
             a {
-                color: gray;
+                color: $Meduim-gray;
                 text-decoration: none;
                 font-size: 20px;
             }
@@ -39,83 +40,20 @@ header {
 
     button:focus,
     button:hover {
-        color: black;
-        border-color: black;
+        color: $Black;
+        border-color: $Black;
     }
     .login-button {
         border: none;
     }
-
-    #open-btn {
-        font-size: 1rem;
-        display: none;
-        border: none;
-    }
+}
+#open-btn {
+    font-size: 1rem;
+    display: none;
+    border: none;
 }
 
-.sidebar {
-    width: 60%;
-    padding: 1rem;
-    height: 100%;
-    margin: 0;
-    position: fixed;
-    top: 0;
-    right: 0;
-    box-shadow: 3px 3px 100px rgba(0, 0, 0, 1);
-    background-color: white;
-    z-index: 1;
-    // animation: slow 3s  normal forwards ease-in;
-
-    .mobile-nav {
-        font-size: 1rem;
-        margin-top: 80px;
-    }
-    ul {
-        text-align: left;
-        padding: 0;
-    }
-    li {
-        list-style-type: none;
-        display: block;
-        margin: 30px 10px;
-
-        a {
-            color: $Meduim-gray;
-            text-decoration: none;
-            font-size: 20px;
-        }
-        a:hover {
-            color: $Almost-black;
-        }
-        img {
-            width: 15px;
-        }
-    }
-
-    #close-btn {
-        font-size: 2rem;
-        position: fixed;
-        right: 20px;
-        border: none;
-        background-color: white;
-        cursor: pointer;
-    }
-
-    .mobile-nav-buttons {
-        display: flex;
-        flex-direction: column;
-        button {
-            @include btns;
-        }
-        button:hover {
-            color: black;
-            border-color: black;
-        }
-        .login-button {
-            border: none;
-        }
-    }
-}
+// Hover Navigation Styles
 
 .hover-list-features {
     @include hover;
@@ -134,6 +72,81 @@ header {
     left: 310px;
     top: 80px;
 }
+
+.sidebar {
+    width: 60%;
+    height: 100vh;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    box-shadow: 3px 3px 100px rgba(0, 0, 0, 1);
+    background-color: $White;
+    z-index: 1;
+    overflow: scroll;
+
+    .mobile-nav {
+        font-size: 1rem;
+        margin-top: 60px;
+    }
+
+    ul {
+        text-align: left;
+        padding: 0;
+    }
+    li {
+        list-style-type: none;
+        display: block;
+        margin: 40px 10px;
+
+        a {
+            color: $Meduim-gray;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        a:hover {
+            color: $Almost-black;
+        }
+        img {
+            width: 15px;
+        }
+    }
+
+    #close-btn {
+        font-size: 2rem;
+        position: fixed;
+        right: 20px;
+        border: none;
+        background-color: $White;
+        cursor: pointer;
+    }
+
+    .mobile-nav-buttons {
+        display: flex;
+        flex-direction: column;
+        button {
+            @include btns;
+        }
+        button:hover {
+            color: $Black;
+            border-color: $Black;
+        }
+        .login-button {
+            border: none;
+        }
+    }
+}
+
+.dropdown-list-features,
+.dropdown-list-company {
+    margin: 30px 0 0 20px;
+    // margin-left: 20px;
+
+    img {
+        margin-right: 10px;
+    }
+}
+
 .none {
     display: none;
 }
@@ -158,7 +171,7 @@ main {
 
         h1 {
             font: {
-                family: Helvetica, sans-serif;
+                family: "Epilogue", sans-serif;
                 size: 5rem;
             }
             margin: 2rem 0;
@@ -190,13 +203,12 @@ main {
         }
     }
 }
-
 #Learn-more-btn {
-    // cursor: pointer;
-    background-color: black;
-    color: white;
+    cursor: pointer;
+    background-color: $Black;
+    color: $White;
     border: none;
-    width: 35%;
+    width: 40%;
     padding: 20px 25px;
     font-size: 20px;
     font-weight: bold;
@@ -204,12 +216,11 @@ main {
     border-radius: 15px;
 }
 #Learn-more-btn:focus,
-#Learn-more-btn:hover{
+#Learn-more-btn:hover {
     background-color: $White;
     color: $Almost-black;
     border: 1px solid $Meduim-gray;
 }
-
 
 footer {
     font-size: 15px;
